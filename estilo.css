@@ -1,0 +1,172 @@
+/* estilo.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0730c5;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+header .beta {
+  font-size: 0.8em;
+  color: #ffc107;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h3 {
+  color: #333;
+}
+
+.initial-message {
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drop-area {
+  width: 100%;
+  max-width: 600px;
+  border: 2px dashed #07c527;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: #e8f0fe;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.drop-area.highlight {
+  background: #d0f0c0;
+}
+
+.drop-area label {
+  display: block;
+  font-size: 1.1em;
+  color: #8cc507;
+  cursor: pointer;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-input + label {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+svg {
+  margin-bottom: 10px;
+}
+
+.container2 {
+  width: 100%;
+  max-width: 600px;
+}
+
+.archivos_subidos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.archivos_subidos a {
+  text-decoration: none;
+  color: #5007c5;
+  font-weight: bold;
+}
+
+.archivos_subidos .btn_delete {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  padding: 0;
+}
+
+.archivos_subidos .btn_delete svg {
+  vertical-align: middle;
+}
+
+.success {
+  color: #2ecc71;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.progress-container {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #07c527;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+.upload-message {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.upload-message .success {
+  color: #2ecc71;
+}
+
+.upload-message .error {
+  color: #e74c3c;
+}
+
+.progress-text {
+  text-align: center;
+  line-height: 20px;
+  color: #333;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .drop-area {
+    width: 90%;
+  }
+}
